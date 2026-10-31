@@ -1,5 +1,17 @@
 SELECT
     CASE
+        WHEN order_delivered_customer_date <= order_estimated_delivery_date
+            THEN 'On time or early'
+        ELSE 'Late'
+    END AS delivery_group,
+    COUNT(*) AS order_count
+FROM olist.orders
+WHERE order_status = 'delivered'
+  AND order_delivered_customer_date IS NOT NULL
+  AND order_estimated_delivery_date IS NOT NULL
+GROUP BY delivery_group
+ORDER BY order_count DESC;SELECT
+    CASE
         WHEN o.order_delivered_customer_date <= o.order_estimated_delivery_date
             THEN 'On time or early'
         ELSE 'Late'
