@@ -10,7 +10,9 @@ WHERE order_status = 'delivered'
   AND order_delivered_customer_date IS NOT NULL
   AND order_estimated_delivery_date IS NOT NULL
 GROUP BY delivery_group
-ORDER BY order_count DESC;SELECT
+ORDER BY order_count DESC;
+
+SELECT
     CASE
         WHEN o.order_delivered_customer_date <= o.order_estimated_delivery_date
             THEN 'On time or early'
