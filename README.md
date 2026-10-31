@@ -6,8 +6,6 @@ A portfolio project using PostgreSQL and Power BI to explore how delivery timing
 
 ## Dashboard preview
 
-![Olist delivery performance dashboard](images/dashboard-preview.png)
-
 [Open the dashboard PDF](OLIST%20DELIVERY%20PERFORMANCE.pdf)
 
 ## Project question
