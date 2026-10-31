@@ -91,7 +91,7 @@ The CSV files are intentionally not stored in this repository. Follow the Kaggle
 - The review-score comparison includes delivered orders that also have a review.
 - These results describe an association; they do not prove that delivery timing alone caused the difference in scores.
 
-## AI USe
+## AI USE
 I used Chatgtp to create the Readme banner.I used ChatGPT as a learning assistant during this project. It guided with troubleshooting, and supported the documentation process. I ran the SQL queries, reviewed the results, and made the dashboard design decisions myself. I checked the analysis and wording before including them in this portfolio.
 
 ## Dashboard
